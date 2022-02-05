@@ -1,0 +1,69 @@
+{
+    "name": "Neko Music",
+    "description": "A Cute telegram music bot with high quality songs.",
+    "repository": "https://github.com/Awesome-Prince/NekoXMusic",
+    "logo": "https://telegra.ph/file/d68123a9ac545650483f8.png",
+    "stack": "container",
+    "keywords": [
+      "telegram",
+      "voicechat",
+      "userbot",
+      "music",
+      "player",
+      "python",
+      "pyrogram",
+      "py-tgcalls",
+      "musicplayer"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Telegram app id, get it from https://my.telegram.org/apps",
+        "value": "",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Telegram app hash, get it from https://my.telegram.org/apps",
+        "value": "",
+        "required": true
+      },
+      "SESSION": {
+        "description": "Pyrogram session string, get it from replit",
+        "value": "",
+        "required": true
+      },
+      "SUDOERS": {
+        "description": "ID of sudo users who have special access (separate multiple ids with space)",
+        "value": "1732814103",
+        "required": false
+      },
+      "PREFIX": {
+        "description": "Bot commad prefix or handler (separate multiple prefix with space)",
+        "value": "/",
+        "required": false
+      },
+      "LANGUAGE": {
+        "description": "An available bot language (read the README.md for more info)",
+        "value": "en",
+        "required": false
+      },
+      "QUALITY": {
+        "description": "An available stream quality (read the README.md for more info)",
+        "value": "high",
+        "required": false
+      }
+    },
+    "formation": {
+      "worker": {
+        "quantity": 1,
+        "size": "free"
+      }
+    },
+    "buildpacks": [
+      {
+        "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest"
+      },
+      {
+        "url": "heroku/python"
+      }
+    ]
+  }

@@ -22,7 +22,7 @@ from pyrogram import filters
 from threading import Thread
 from pyrogram.types import Message
 from pytgcalls.types import Update
-from NekoMusic.config import config
+from NekoMusic.config import Config
 from NekoMusic.plugins.song import Song
 from pyrogram.raw.types import InputPeerChannel
 from pyrogram.raw.functions.phone import CreateGroupCall

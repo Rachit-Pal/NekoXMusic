@@ -5,7 +5,7 @@ ENV PIP_NO_CACHE_DIR 1
 RUN apt update && apt upgrade -y
 RUN apt install git curl python3-pip ffmpeg -y
 
-RUN git clone -b master https://github.com/Awesome-Prince/NekoMusic /root/NekoMusic
+RUN git clone -b master https://github.com/Awesome-Prince/NekoXMusic /root/NekoMusic
 WORKDIR /root/NekoMusic
 #Copy config file to /root/Sophia/Sophia
 COPY . ./NekoMusic/config.py* /root/NekoMusic/NekoMusic/

@@ -1,1 +1,1 @@
-worker: bash NekoMusic
+python3 -m NekoMusic

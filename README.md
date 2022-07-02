@@ -106,11 +106,11 @@ New languages, bug fixes and improvements following
 
 ## ♡ <a name="supports"></a>Supports
 
-For any kind of help join [Group](https://t.me/NekoXSupport).
+For any kind of help join [Group](https://t.me/Koyuki_Support).
 
 ## ♡ <a name="credits"></a>Credits
 
-➢ [Lovely Prince](https://github.com/Awesome-Prince) for [Repo](https://github.com/Awesome-Prince/NekoXMusic)
+➢ [Lovely Prince](https://github.com/Awesome-Prince) - OWNER | DEV
 
 ## ♡ <a name="license"></a>License
 

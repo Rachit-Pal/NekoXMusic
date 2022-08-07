@@ -16,11 +16,29 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
 
-from NekoMusic.plugins.song import Song
-from NekoMusic.plugins.groups import (
-    get_group, get_queue, set_group, set_title, all_groups, clear_queue,
-    set_default, shuffle_queue)
 from NekoMusic.plugins.funcs import (
-    app, ydl, safone, search, restart, pytgcalls, skip_stream, check_yt_url,
-    extract_args, start_stream, generate_cover, delete_messages,
-    get_youtube_playlist)
+    app,
+    check_yt_url,
+    delete_messages,
+    extract_args,
+    generate_cover,
+    get_youtube_playlist,
+    pytgcalls,
+    restart,
+    safone,
+    search,
+    skip_stream,
+    start_stream,
+    ydl,
+)
+from NekoMusic.plugins.groups import (
+    all_groups,
+    clear_queue,
+    get_group,
+    get_queue,
+    set_default,
+    set_group,
+    set_title,
+    shuffle_queue,
+)
+from NekoMusic.plugins.song import Song

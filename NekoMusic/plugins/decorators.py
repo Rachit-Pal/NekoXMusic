@@ -17,16 +17,18 @@ along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
 
 import time
-from pyrogram import Client
 from datetime import datetime
-from NekoMusic.lang import load
-from pytgcalls import PyTgCalls
 from traceback import format_exc
+from typing import Callable, Union
+
+from pyrogram import Client
 from pyrogram.types import Message
+from pytgcalls import PyTgCalls
 from pytgcalls.types import Update
-from typing import Union, Callable
+
 from NekoMusic.config import config
-from NekoMusic.plugins.groups import get_group, all_groups, set_default
+from NekoMusic.lang import load
+from NekoMusic.plugins.groups import all_groups, get_group, set_default
 
 
 def register(func: Callable) -> Callable:

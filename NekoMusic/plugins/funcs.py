@@ -15,30 +15,36 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
 
+import asyncio
 import os
+import random
 import re
 import sys
 import time
-import random
-import aiohttp
-import asyncio
+from typing import AsyncIterator, Optional, Tuple, Union
+
 import aiofiles
-from pyrogram import Client
-from pytube import Playlist
-from yt_dlp import YoutubeDL
-from pyrogram.types import Message
-from NekoMusic.config import config
-from NekoMusic.plugins.song import Song
+import aiohttp
 from PIL import Image, ImageDraw, ImageFont
+from pyrogram import Client
+from pyrogram.types import Message
 from pytgcalls import PyTgCalls, StreamType
-from youtubesearchpython import VideosSearch
-from typing import Tuple, Union, Optional, AsyncIterator
-from NekoMusic.plugins.groups import get_group, set_title
 from pytgcalls.types.input_stream import AudioPiped, AudioVideoPiped
 from pytgcalls.types.input_stream.quality import (
-    LowQualityAudio, LowQualityVideo, HighQualityAudio, HighQualityVideo,
-    MediumQualityAudio, MediumQualityVideo)
+    HighQualityAudio,
+    HighQualityVideo,
+    LowQualityAudio,
+    LowQualityVideo,
+    MediumQualityAudio,
+    MediumQualityVideo,
+)
+from pytube import Playlist
+from youtubesearchpython import VideosSearch
+from yt_dlp import YoutubeDL
 
+from NekoMusic.config import config
+from NekoMusic.plugins.groups import get_group, set_title
+from NekoMusic.plugins.song import Song
 
 safone = {}
 ydl_opts = {

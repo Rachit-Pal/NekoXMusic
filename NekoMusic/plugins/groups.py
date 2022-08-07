@@ -16,13 +16,14 @@ You should have received a copy of the GNU Affero General Public License
 along with this program.  If not, see <https://www.gnu.org/licenses/>
 """
 
-from pyrogram.types import Message
-from NekoMusic.config import config
 from typing import Any, Dict, Union
-from NekoMusic.plugins.queue import Queue
+
 from pyrogram.raw.functions.channels import GetFullChannel
 from pyrogram.raw.functions.phone import EditGroupCallTitle
+from pyrogram.types import Message
 
+from NekoMusic.config import config
+from NekoMusic.plugins.queue import Queue
 
 GROUPS: Dict[int, Dict[str, Any]] = {}
 
